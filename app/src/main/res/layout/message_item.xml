@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/lv_message_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_weight="0.75"
+            android:text="通知名称"
+            android:textColor="#cc1c1c1d"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/lv_message_time"
+            android:layout_width="100sp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_weight="0.25"
+            android:text="时间"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/lv_message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:text="通知内容"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

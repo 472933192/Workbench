@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="series_array">
+        <item>KONKA_TV</item>
+        <item>KONKA_TV(电商)</item>
+    </string-array>
+    <string-array name="localDimming_array">
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+    <string-array name="state_array">
+        <item>测试</item>
+        <item>整改</item>
+        <item>合格定版</item>
+        <item>入库</item>
+    </string-array>
+
+</resources>

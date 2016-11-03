@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background000"
+    >
+
+    <!--我的项目按钮-->
+    <ImageButton
+        android:layout_width="280sp"
+        android:layout_height="65sp"
+        android:layout_marginTop="280sp"
+        android:id="@+id/myPro_btn"
+        android:background="@drawable/ui_button_bg"
+        android:layout_weight="1"/>
+    <!--项目列表按钮-->
+    <ImageButton
+        android:layout_width="280sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="15sp"
+        android:id="@+id/proList_btn"
+        android:background="@drawable/ui_button_bg1"
+        android:layout_weight="1"/>
+    <!--消息中心按钮-->
+    <ImageButton
+        android:layout_width="280sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="15sp"
+        android:id="@+id/messageCenter_btn"
+        android:background="@drawable/ui_button_bg2"
+        android:layout_weight="1"/>
+
+    <ImageButton
+        android:id="@+id/logout_btn"
+        android:layout_marginTop="15sp"
+        android:layout_width="280sp"
+        android:layout_height="60sp"
+        android:layout_marginBottom="20sp"
+        android:background="@drawable/ui_button_bg3"
+        android:text="退出登陆"
+        android:layout_weight="1"/>
+
+</LinearLayout>

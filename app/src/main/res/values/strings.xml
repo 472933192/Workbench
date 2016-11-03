@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">KONKA</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="type">机型</string>
+    <string name="platform">平台</string>
+    <string name="series">系列</string>
+    <string name="resolution">分辨率</string>
+    <string name="character">屏特性</string>
+    <string name="localDimming">动态背光技术</string>
+    <string name="tuner">Tuner</string>
+    <string name="demo">Demo</string>
+    <string name="port">端子</string>
+    <string name="bom_effective">BOM生效时间</string>
+    <string name="sampleFinishDate">样评完成时间</string>
+    <string name="firstTestDate">初试下机时间</string>
+    <string name="volProDate">开始批量时间</string>
+    <string name="storageDate">批量入库时间</string>
+    <string name="demAddress">需求地址</string>
+    <string name="content">内容</string>
+    <string name="subName">版本名</string>
+    <string name="state">软件版本状态</string>
+    <!--删除对话框 -->
+    <string name="delete_title">删除项目</string>
+    <string name="delete_message">确认要删除？</string>
+</resources>

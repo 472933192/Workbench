@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center_horizontal">
+    <!--成员显示页面-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/title_back">
+        <TextView
+            android:id="@+id/activity_member_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="项目成员"
+            android:textColor="@color/title_color"
+            android:textSize="20sp"/>
+        <ImageButton
+            android:id="@+id/add_member_bn"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:background="@drawable/app_add_button"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/member_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>

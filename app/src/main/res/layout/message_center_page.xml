@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--消息显示框-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_back">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的消息"
+            android:textColor="@color/title_color"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DELETE"
+            android:id="@+id/table_del_button"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <com.example.konka.workbench.domain.SlideCutListView
+        android:id="@+id/slideCutListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent">
+    </com.example.konka.workbench.domain.SlideCutListView>
+
+
+</LinearLayout>

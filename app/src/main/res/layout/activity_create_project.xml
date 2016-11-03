@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="项目内容"
+            android:textSize="20sp"
+            android:textColor="#cc191c1e" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="项目名:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/myProject_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:singleLine="true"
+                    android:layout_marginRight="15sp"
+                    android:hint="项目名不能为空"
+                    android:textColorHint="#ef8a9b9c"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="机型:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/type_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:hint="机型不能为空"
+                    android:singleLine="true"
+                    android:textColorHint="#ef8a9b9c"
+                    android:layout_marginRight="15sp"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="平台:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/platform_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:layout_marginRight="15sp"
+                    android:hint="平台不能为空"
+                    android:singleLine="true"
+                    android:textColorHint="#ef8a9b9c"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="系列:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/series_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/series_array">
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="localDimming:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/localDimming_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/localDimming_array">
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分辨率:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/resolution_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:ems="20"
+                    android:singleLine="true"
+                    android:textSize="15sp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="屏特性:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/character_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:singleLine="true"
+                    android:layout_marginRight="15sp"
+                    android:textSize="15sp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tuner:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/tuner_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:singleLine="true"
+                    android:layout_marginRight="15sp"
+                    android:textSize="15sp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Demo:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/demo_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:ems="20"
+                    android:singleLine="true"
+                    android:textSize="15sp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="端子:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/port_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:inputType="textMultiLine"
+                    android:ellipsize="none"
+                    android:singleLine="false"
+                    android:ems="20"
+                    android:textSize="15sp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配屏:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/withScreen_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:ems="20"
+                    android:singleLine="true"
+                    android:hint="配屏不能为空"
+                    android:textColorHint="#ef8a9b9c"
+                    android:textSize="15sp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BOM:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/bom_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:ems="20"
+                    android:singleLine="true"
+                    android:hint="BOM不能为空"
+                    android:textColorHint="#ef8a9b9c"
+                    android:textSize="15sp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BOM生效时间:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/BOMTime_edit"
+                    android:layout_width="100sp"
+                    android:layout_height="25sp"
+                    android:layout_marginLeft="10sp"
+                    android:background="@drawable/blank_bn"
+                    android:hint="点击设置"
+                    android:textSize="15sp">
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="需求地址:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/demAddress_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:inputType="textUri"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:ellipsize="none"
+                    android:singleLine="false"
+                    android:ems="20"
+                    android:textSize="15sp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="软件名:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/softwareName_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:inputType="textMultiLine"
+                    android:ellipsize="none"
+                    android:singleLine="false"
+                    android:ems="20"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="软件版本:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/softwareVersion_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:ems="20"
+                    android:singleLine="true"
+                    android:hint="软件版本不能为空"
+                    android:textColorHint="#ef8a9b9c"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="软件状态:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/state_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/state_array">
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报告编号:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/reportNumber_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:inputType="textMultiLine"
+                    android:ellipsize="none"
+                    android:singleLine="false"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="初试下机时间:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/firstTestDate_edit"
+                    android:layout_width="100sp"
+                    android:layout_height="25sp"
+                    android:layout_marginLeft="10sp"
+                    android:background="@drawable/blank_bn"
+                    android:hint="点击设置"
+                    android:textSize="15sp">
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="样评完成时间:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/sampleFinishDate_edit"
+                    android:layout_width="100sp"
+                    android:layout_height="25sp"
+                    android:layout_marginLeft="10sp"
+                    android:background="@drawable/blank_bn"
+                    android:hint="点击设置"
+                    android:textSize="15sp">
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中试下机时间:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/minTestDate_edit"
+                    android:layout_width="100sp"
+                    android:layout_height="25sp"
+                    android:layout_marginLeft="10sp"
+                    android:background="@drawable/blank_bn"
+                    android:hint="点击设置"
+                    android:textSize="15sp">
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始批量时间:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/volProDate_edit"
+                    android:layout_width="100sp"
+                    android:layout_height="25sp"
+                    android:layout_marginLeft="10sp"
+                    android:background="@drawable/blank_bn"
+                    android:hint="点击设置"
+                    android:textSize="15sp">
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="批量入库时间:"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/storageDate_edit"
+                    android:layout_width="100sp"
+                    android:layout_height="25sp"
+                    android:layout_marginLeft="10sp"
+                    android:background="@drawable/blank_bn"
+                    android:hint="点击设置"
+                    android:textSize="15sp">
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10sp"
+                android:background="@color/white">
+                <Button
+                    android:id="@+id/preserve_button"
+                    android:layout_width="70sp"
+                    android:layout_height="40sp"
+                    android:layout_marginLeft="90sp"
+                    android:background="@drawable/save_bn"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/cancel_button"
+                    android:layout_width="70sp"
+                    android:layout_height="40sp"
+                    android:layout_marginLeft="80sp"
+                    android:layout_marginRight="90sp"
+                    android:background="@drawable/unsave_bn"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
